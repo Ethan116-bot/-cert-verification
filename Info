@@ -1,0 +1,47 @@
+const certificates = {
+  "KEB- 2025-YLS0000001": {
+    name: "May Thandar Htet",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000002": {
+    name: "Nwaye Yu Zin",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000003": {
+    name: "Shwe Yamone Thaw",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000004": {
+    name: "Shwe Phyu Kyaw",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000005": {
+    name: "Bhone Mhan Pyae",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000006": {
+    name: "Kyal Sin",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000007": {
+    name: "Shwan Yati Soe",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000008": {
+    name: "Shine Wai Myo",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  },
+  "KEB- 2025-YLS0000009": {
+    name: "Zwe Htet Naing",
+    course: "Starters (Pre A1)",
+    date: "29/7/2025"
+  }
+};
