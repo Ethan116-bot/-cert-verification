@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Verification</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 40px; }
+    input, button { padding: 10px; font-size: 16px; margin: 10px; }
+    #result { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>KEB Certificate Verification</h1>
+  <p>Enter your certificate number below:</p>
+  <input type="text" id="certNumber" placeholder="e.g. KEB- 2025-YLS0000001" />
+  <button onclick="verify()">Verify</button>
+
+  <div id="result"></div>
+
+  <script src="certificates.js"></script>
+  <script>
+    function verify() {
+      const input = document.getElementById("certNumber").value.trim();
+      const cert = certificates[input];
+      const resultDiv = document.getElementById("result");
+
+      if (cert) {
+        resultDiv.innerHTML = `
+          <p><strong>Certificate Number:</strong> ${input}</p>
+          <p><strong>Student Name:</strong> ${cert.name}</p>
+          <p><strong>Course:</strong> ${cert.course}</p>
+          <p><strong>Issue Date:</strong> ${cert.date}</p>
+          <p style="color: green;"><strong>Status:</strong> VALID</p>
+        `;
+      } else {
+        resultDiv.innerHTML = `<p style="color: red;">Certificate not found.</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
